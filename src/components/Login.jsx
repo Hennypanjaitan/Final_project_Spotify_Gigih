@@ -22,14 +22,19 @@ export default function Login() {
     )}&response_type=token&show_dialog=true`;
   };
   return (
-    <Container>
+    <Container data-testid="test-pageLogin">
+      <div data-testid = "test-login">
       <img
         src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png"
         alt="spotify"
       />
-      <button onClick={handleClick}>Connect Spotify</button>
+      </div>
+      <div>
+        <button onClick={handleClick}>Connect Spotify</button>
+      </div>
     </Container>
   );
+  
 }
 
 const Container = styled.div`
